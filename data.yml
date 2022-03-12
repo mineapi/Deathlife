@@ -1,0 +1,54 @@
+version: 2.2.7
+enabled: true
+worldborder: 8000
+maxboogeymen: 1
+autpick: false
+autopickintervals: 3
+spectatorspawn: -100/92/-100/world
+autopick: false
+boogeymen: []
+lives:
+  209c8a1c-aa77-42da-a706-9ed2d733060a: '4'
+  1f1a8201-080f-424f-90f4-db4cb9c9dcaa: '4'
+  7d3054c1-654f-4c20-b2d4-d3d43ce49bf8: '0'
+  3a7eac22-0d95-44b3-8f69-f9daeb701d3a: '2'
+  e16e055c-286c-48ec-947c-25f396c78f39: '0'
+  888065bf-fc8a-439b-afad-dfbfe53eda01: '0'
+  9e6bf82d-48df-4547-bf48-8dbf171a9975: '0'
+  0430356a-8ec7-48d4-a418-5edfa388978c: '5'
+  e7551cf2-6d57-4b50-9f6c-9d463db87fb8: '6'
+  f19e599f-e177-42df-971f-f5bc54b064f4: '2'
+  2a2bfa0e-ac25-4180-8476-c8a676fad2e4: '0'
+  130b3075-c7b8-4ce0-a016-034c3a1d7bee: '9'
+  f819e32e-93ff-4906-b021-511eb014a635: '4'
+  6d70164a-48af-4372-9847-53fd599bd897: '7'
+  2e63c394-7f6a-4eca-8706-34c55f17fe11: '5'
+  898d1bcd-ff56-4190-b729-416d90850955: '5'
+  bafea25c-fe6f-41b8-abd8-24345e6b3a27: '0'
+  1fff527e-f4c8-4deb-be84-8a6e67509b82: '3'
+  a8d800b3-d202-4c0e-ae64-019377df0e55: '1'
+  53d6a4ad-dfbd-43b7-a918-77df812fdd85: '1'
+  72aefe95-5940-47b4-a7c7-c6ad02ee8c56: '3'
+  9aff14cd-44d6-45a9-ac3d-fd71ba1dce41: '0'
+  85584490-e2c8-4338-92b2-988345a63d30: '7'
+  3fadc8e4-2987-472a-8fe2-1b7dd0f8f5e3: '3'
+  5c8efb69-690c-4e39-9baf-b0f41de26b4a: '3'
+  b1d6d039-dae0-4b66-b3c6-d0c30ee41daa: '5'
+  7bd0cd7a-3af2-475f-b5f7-c2a927fa0640: '1'
+  6277918a-5625-4ebb-b37d-27aaf67ce92c: '5'
+  86b8ffad-f717-4516-a726-a424e31c9bac: '3'
+  1ef79c0b-9161-4f88-9618-a9fea3338566: '3'
+  9acca95c-d9ba-49ce-9d56-ac31cbf5b051: '5'
+  5f9a6a77-01a3-437c-896a-38c8ff2ac952: '5'
+  606a1a8f-0cff-4126-b40f-ae43f878ada2: '3'
+  b32438ac-0c53-4645-8f31-0a2b746bc844: '1'
+  abb2e88e-1485-442f-9800-f8a1ab7e8ca5: '0'
+  e7ee504d-b8dc-46b9-8234-1c76e23050db: '0'
+  7540ec72-1a2d-454d-92c2-5074b9c43911: '7'
+  9582deea-335e-4314-af4a-159787d91f13: '4'
+  dc7880e1-1ad1-4b0f-9e58-cd4fb1665f81: '3'
+  f7b18bb8-be2b-4b0d-985a-34ad243a9e9a: '2'
+  bc8296ea-8246-4fc9-840d-ec1196cc41ce: '0'
+  6e879de6-ae04-4343-95ac-e50bbb48b533: '2'
+  cfb0bd8b-0cbc-402a-ab8e-9409fddcbccb: '1'
+  211b8b36-2871-44d5-a284-754e6938da04: '6'

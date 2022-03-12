@@ -1,0 +1,10 @@
+name: DeathLife
+version: '${project.version}'
+main: me.mineapi.deathlife.DeathLife
+api-version: 1.18
+depend:
+  - LastLife
+
+commands:
+  withdraw:
+    description: "Get a life totem."
