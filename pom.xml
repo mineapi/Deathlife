@@ -6,7 +6,7 @@
 
     <groupId>me.mineapi</groupId>
     <artifactId>deathLife</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <packaging>jar</packaging>
 
     <name>DeathLife</name>
@@ -79,6 +79,11 @@
             <groupId>me.mineapi</groupId>
             <artifactId>NMSTitleAPI</artifactId>
             <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>me.xcalibur8</groupId>
+            <artifactId>lastlife</artifactId>
+            <version>2.2.9</version>
         </dependency>
     </dependencies>
 </project>

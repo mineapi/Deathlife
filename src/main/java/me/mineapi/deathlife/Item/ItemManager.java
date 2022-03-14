@@ -3,6 +3,7 @@ package me.mineapi.deathlife.Item;
 import me.mineapi.deathlife.Item.Consumables.LifeKey;
 import me.mineapi.deathlife.Item.Consumables.LifeTotem;
 import org.bukkit.Bukkit;
+import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
@@ -38,9 +39,11 @@ public class ItemManager implements Listener {
                     for (Item item:
                             items) {
                         if (!Objects.isNull(event.getItem().getItemMeta())) {
-                            if (item instanceof UsableItem usableItem && event.getPlayer().getInventory().getItemInMainHand().getItemMeta().equals(item.itemStack().getItemMeta())) {
-                                if (event.getAction().equals(Action.RIGHT_CLICK_AIR) || event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
-                                    usableItem.onRightClick(event.getPlayer());
+                            if (event.getPlayer().getInventory().getItemInMainHand().getType() != Material.AIR) {
+                                if (item instanceof UsableItem usableItem && event.getPlayer().getInventory().getItemInMainHand().getItemMeta().equals(item.itemStack().getItemMeta())) {
+                                    if (event.getAction().equals(Action.RIGHT_CLICK_AIR) || event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
+                                        usableItem.onRightClick(event.getPlayer());
+                                    }
                                 }
                             }
                         }

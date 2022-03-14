@@ -15,19 +15,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up JDK 17
-      uses: actions/setup-java@v2
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: maven
-    - name: Install NMSTitleAPI
-      run: mvn install:install-file \-Dfile=src/main/resources/lib/NMSTitleAPI-1.0.jar \ -DgroupId=me.mineapi \ -DartifactId=NMSTitleAPI \ -Dversion=1.0 \-Dpackaging=jar \ -DgeneratePom=true
-    - name: Build
-      run: mvn -B package --file pom.xml
-    - run: mkdir staging && cp target/*.jar staging
-    - uses: actions/upload-artifact@v2
-      with:
-        name: Deathlife
-        path: staging
+      - uses: actions/checkout@v2
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+      - name: Install LastLife
+        run: mvn install:install-file -Dfile=src/main/resources/lib/LastLife-2.2.9.jar -DgroupId=me.xcalibur8 -DartifactId=lastlife -Dversion=2.2.9 -Dpackaging=jar -DgeneratePom=true
+      - name: Install NMSTitleAPI
+        run: mvn install:install-file -Dfile=src/main/resources/lib/NMSTitleAPI-1.0.jar -DgroupId=me.mineapi -DartifactId=NMSTitleAPI -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
+      - name: Build
+        run: mvn -B package --file pom.xml
+      - run: mkdir staging && cp target/*.jar staging
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Deathlife
+          path: staging
