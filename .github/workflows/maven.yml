@@ -22,6 +22,8 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - name: Install NMSTitleAPI
+      run: mvn install:install-file \-Dfile=src/main/resources/lib/NMSTitleAPI-1.0.jar \ -DgroupId=me.mineapi \ -DartifactId=NMSTitleAPI \ -Dversion=1.0 \-Dpackaging=jar \ -DgeneratePom=true
     - name: Build
       run: mvn -B package --file pom.xml
     - run: mkdir staging && cp target/*.jar staging
