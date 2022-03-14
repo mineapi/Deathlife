@@ -33,24 +33,19 @@ public class ItemManager implements Listener {
     public void handleConsumableItems(PlayerInteractEvent event) {
         if (event.hasItem()) {
             ItemStack eventItem = event.getItem();
-
-            try {
-                if (event.hasItem()) {
-                    for (Item item:
-                            items) {
-                        if (!Objects.isNull(event.getItem().getItemMeta())) {
-                            if (event.getPlayer().getInventory().getItemInMainHand().getType() != Material.AIR) {
-                                if (item instanceof UsableItem usableItem && event.getPlayer().getInventory().getItemInMainHand().getItemMeta().equals(item.itemStack().getItemMeta())) {
-                                    if (event.getAction().equals(Action.RIGHT_CLICK_AIR) || event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
-                                        usableItem.onRightClick(event.getPlayer());
-                                    }
+            if (event.hasItem()) {
+                for (Item item:
+                        items) {
+                    if (!Objects.isNull(event.getItem().getItemMeta())) {
+                        if (event.getPlayer().getInventory().getItemInMainHand().getType() != Material.AIR) {
+                            if (item instanceof UsableItem usableItem && event.getPlayer().getInventory().getItemInMainHand().getItemMeta().equals(item.itemStack().getItemMeta())) {
+                                if (event.getAction().equals(Action.RIGHT_CLICK_AIR) || event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
+                                    usableItem.onRightClick(event.getPlayer());
                                 }
                             }
                         }
                     }
                 }
-            } catch (Exception ex) {
-                Bukkit.getConsoleSender().sendMessage("The Item Manager had an error... but it's probably nothing.");
             }
         }
     }
